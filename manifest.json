@@ -1,0 +1,27 @@
+{
+
+  "manifest_version": 2,
+  "name": "Beautify Basic",
+  "version": "1",
+
+  "description": "Instantly beautifies any basic html website with simple css! (e.g all those professor websites)",
+
+  "icons": {
+    "48": "images/minioneye.png"
+  },
+  "content_scripts": [
+    {
+    "matches": ["<all_urls>"]
+    //"css":["styles/index.css"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "contextMenus"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+}
